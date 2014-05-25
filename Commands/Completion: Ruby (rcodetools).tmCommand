@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+	<string>#!/usr/bin/env ruby -wKU
 
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/exit_codes"
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/ui"
@@ -58,15 +58,23 @@ print selected.sub(/\A#{Regexp.escape(ENV['TM_CURRENT_WORD'].to_s)}/, "")
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>~</string>
 	<key>name</key>
 	<string>Completion: Ruby (rcodetools)</string>
-	<key>output</key>
-	<string>afterSelectedText</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>uuid</key>
 	<string>47D203ED-EB9B-4653-A07B-A897800CEB76</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
