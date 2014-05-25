@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
+	<string>#!/usr/bin/env ruby
 require ENV['TM_SUPPORT_PATH'] + '/lib/textmate'
 puts `"${TM_RUBY:=ruby}" -e'puts "Using ruby-" + RUBY_VERSION.to_s'`
 result = `"${TM_RUBY:=ruby}" -wc 2&gt;&amp;1`
@@ -14,15 +14,23 @@ TextMate.go_to :line =&gt; $1 if result =~ /-:(\d+):/
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^V</string>
 	<key>name</key>
 	<string>Validate Syntax</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>uuid</key>
 	<string>EE5F19BA-6C02-11D9-92BA-0011242E4184</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
