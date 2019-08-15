@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.[a-z]+)*/(?2::\u$1)/g}}
-	$0
-end</string>
+	<string># frozen_string_literal: ${1:true}
+</string>
 	<key>name</key>
-	<string>class .. end</string>
+	<string># frozen_string_literal: true</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>cla</string>
+	<string>frozen</string>
 	<key>uuid</key>
-	<string>BF487539-8085-4FF4-8601-1AD20FABAEDC</string>
+	<string>F8D36847-D339-4563-AB28-E22C71B9CBF7</string>
 </dict>
 </plist>

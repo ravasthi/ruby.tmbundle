@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.[a-z]+)*/(?2::\u$1)/g}}
-	$0
+	<string>refine ${1:ClassName} do
+	$2
 end</string>
 	<key>name</key>
-	<string>class .. end</string>
+	<string>refine … end</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>cla</string>
+	<string>refine</string>
 	<key>uuid</key>
-	<string>BF487539-8085-4FF4-8601-1AD20FABAEDC</string>
+	<string>5CB8BCD2-20A5-45E5-A40B-7708C7B8763A</string>
 </dict>
 </plist>
